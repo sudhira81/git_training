@@ -17,7 +17,7 @@ jobs:
   second-job:
     runs-on: ubuntu-latest
     steps:
-      - run: |
+      - run: echo "Select the Environment"
          
 env:
           Environment: ${{ inputs.Environment }}

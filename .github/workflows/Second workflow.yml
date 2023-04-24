@@ -16,6 +16,9 @@ on:
 jobs:
   second-job:
     runs-on: ubuntu-latest
+    steps:
+      - run: |
+          echo "$Environment"
 env:
           Environment: ${{ inputs.Environment }}
         

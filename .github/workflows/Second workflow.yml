@@ -11,19 +11,11 @@ on:
         - Test
         - Stage
         - Prod
-  push: 
-    branches:
-      -main
- 
-    
+  
      
 jobs:
   second-job:
     runs-on: ubuntu-latest
-    steps:
-      - run: |
-          echo "Select the Environment: $Environment"
-        
-        env:
+env:
           Environment: ${{ inputs.Environment }}
         

@@ -11,6 +11,11 @@ on:
         - Test
         - Stage
         - Prod
+  push: 
+    branches:
+      -main
+ 
+    
      
 jobs:
   build:

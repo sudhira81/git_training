@@ -1,7 +1,6 @@
 name: Second Workflow
 on:
   workflow_dispatch:
-    branches: [ "feature" ]
     inputs:
       Environment:
         description: 'Select the Environment'

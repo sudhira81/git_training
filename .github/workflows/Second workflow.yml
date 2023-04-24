@@ -13,7 +13,7 @@ on:
         - Prod
      
 jobs:
-  log-the-inputs:
+  select-the-environment:
     runs-on: ubuntu-latest
     steps:
       - run: |

@@ -13,11 +13,10 @@ on:
         - Prod
      
 jobs:
-  select-the-environment:
+  build:
+
     runs-on: ubuntu-latest
+
     steps:
-      - run: |
-          echo "Select the Environment: $Environment"
-        env:
-          Environment: ${{ inputs.Environment }}
-         
+    - name: Checkout
+    - uses: actions/checkout@v3
